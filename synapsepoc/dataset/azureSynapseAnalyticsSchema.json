@@ -5,20 +5,6 @@
 			"referenceName": "TripFaresSynapseAnalyticsLinkedService2",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"SynapseWorkspaceName": {
-				"type": "string"
-			},
-			"SQLDedicatedPoolName": {
-				"type": "string"
-			},
-			"keyVaultName": {
-				"type": "string"
-			},
-			"SQLLoginUsername": {
-				"type": "string"
-			}
-		},
 		"folder": {
 			"name": "TripFareDatasets"
 		},
