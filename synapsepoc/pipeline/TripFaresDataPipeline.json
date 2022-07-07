@@ -56,17 +56,7 @@
 				"outputs": [
 					{
 						"referenceName": "tripDataSink",
-						"type": "DatasetReference",
-						"parameters": {
-							"datalakeAccountName": {
-								"value": "@pipeline().parameters.datalakeAccountName",
-								"type": "Expression"
-							},
-							"keyVaultName": {
-								"value": "@pipeline().parameters.KeyVaultName",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				]
 			},
@@ -124,17 +114,7 @@
 				"outputs": [
 					{
 						"referenceName": "faresDataSink",
-						"type": "DatasetReference",
-						"parameters": {
-							"keyVaultName": {
-								"value": "@pipeline().parameters.KeyVaultName",
-								"type": "Expression"
-							},
-							"datalakeAccountName": {
-								"value": "@pipeline().parameters.datalakeAccountName",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				]
 			},
