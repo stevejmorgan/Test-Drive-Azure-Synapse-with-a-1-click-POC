@@ -252,25 +252,7 @@
 					},
 					"dataset": {
 						"referenceName": "azureSynapseAnalyticsSchema",
-						"type": "DatasetReference",
-						"parameters": {
-							"SynapseWorkspaceName": {
-								"value": "@pipeline().parameters.SynapseWorkspaceName",
-								"type": "Expression"
-							},
-							"SQLDedicatedPoolName": {
-								"value": "@pipeline().parameters.SQLDedicatedPoolName",
-								"type": "Expression"
-							},
-							"keyVaultName": {
-								"value": "@pipeline().parameters.KeyVaultName",
-								"type": "Expression"
-							},
-							"SQLLoginUsername": {
-								"value": "@pipeline().parameters.SQLLoginUsername",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
 				}
