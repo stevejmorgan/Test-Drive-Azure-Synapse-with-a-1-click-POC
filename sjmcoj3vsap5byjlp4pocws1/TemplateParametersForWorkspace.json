@@ -5,13 +5,13 @@
 		"workspaceName": {
 			"value": "sjmcoj3vsap5byjlp4pocws1"
 		},
+		"TripFaresDataLakeStorageLinkedService2_accountKey": {
+			"value": ""
+		},
 		"TripFaresSynapseAnalyticsLinkedService_connectionString": {
 			"value": ""
 		},
 		"TripFaresSynapseAnalyticsLinkedService2_connectionString": {
-			"value": ""
-		},
-		"TripFaresDataLakeStorageLinkedService2_accountKey": {
 			"value": ""
 		},
 		"HttpServerTripDataLinkedService_properties_typeProperties_url": {
@@ -23,11 +23,11 @@
 		"TripFaresDataLakeStorageLinkedService_properties_typeProperties_url": {
 			"value": "@{concat('https://',linkedService().datalakeAccountName,'.dfs.core.windows.net')}"
 		},
-		"keyVaultLinkedservice_properties_typeProperties_baseUrl": {
-			"value": "@{concat('https://',linkedService().keyVaultName,'.vault.azure.net/')}"
-		},
 		"TripFaresDataLakeStorageLinkedService2_properties_typeProperties_url": {
 			"value": "https://sjmcoj3vsap5byjlp4poc.dfs.core.windows.net/"
+		},
+		"keyVaultLinkedservice_properties_typeProperties_baseUrl": {
+			"value": "@{concat('https://',linkedService().keyVaultName,'.vault.azure.net/')}"
 		}
 	}
 }
