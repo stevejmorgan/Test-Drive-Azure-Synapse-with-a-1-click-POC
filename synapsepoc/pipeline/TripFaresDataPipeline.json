@@ -161,51 +161,7 @@
 				"typeProperties": {
 					"dataflow": {
 						"referenceName": "tripFaresDataTransformations",
-						"type": "DataFlowReference",
-						"datasetParameters": {
-							"TripDataCSV": {
-								"datalakeAccountName": {
-									"value": "@pipeline().parameters.datalakeAccountName",
-									"type": "Expression"
-								},
-								"keyVaultName": {
-									"value": "@pipeline().parameters.KeyVaultName",
-									"type": "Expression"
-								}
-							},
-							"FaresDataCSV": {
-								"keyVaultName": {
-									"value": "@pipeline().parameters.KeyVaultName",
-									"type": "Expression"
-								},
-								"datalakeAccountName": {
-									"value": "@pipeline().parameters.datalakeAccountName",
-									"type": "Expression"
-								}
-							},
-							"SynapseAnalyticsSink": {
-								"SchemaName": {
-									"value": "@pipeline().parameters.SchemaName",
-									"type": "Expression"
-								},
-								"SynapseWorkspaceName": {
-									"value": "@pipeline().parameters.SynapseWorkspaceName",
-									"type": "Expression"
-								},
-								"SQLDedicatedPoolName": {
-									"value": "@pipeline().parameters.SQLDedicatedPoolName",
-									"type": "Expression"
-								},
-								"keyVaultName": {
-									"value": "@pipeline().parameters.KeyVaultName",
-									"type": "Expression"
-								},
-								"SQLLoginUsername": {
-									"value": "@pipeline().parameters.SQLLoginUsername",
-									"type": "Expression"
-								}
-							}
-						}
+						"type": "DataFlowReference"
 					},
 					"compute": {
 						"coreCount": 8,
