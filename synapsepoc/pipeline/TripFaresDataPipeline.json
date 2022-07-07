@@ -195,6 +195,7 @@
 			},
 			{
 				"name": "Copy data Fares Data",
+				"description": "Copies Fares data from CSV in local Data Lake into target table in SQL Dedicated Pool",
 				"type": "Copy",
 				"dependsOn": [
 					{
@@ -285,7 +286,8 @@
 				]
 			},
 			{
-				"name": "Copy data Trips Data 1",
+				"name": "Copy data Trips Data",
+				"description": "Copies Trips data from CSV in local Data Lake into target table in SQL Dedicated Pool",
 				"type": "Copy",
 				"dependsOn": [
 					{
