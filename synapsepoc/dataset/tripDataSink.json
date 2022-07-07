@@ -2,26 +2,8 @@
 	"name": "tripDataSink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "TripFaresDataLakeStorageLinkedService",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"keyVaultName": {
-					"value": "@dataset().keyVaultName",
-					"type": "Expression"
-				},
-				"datalakeAccountName": {
-					"value": "@dataset().datalakeAccountName",
-					"type": "Expression"
-				}
-			}
-		},
-		"parameters": {
-			"datalakeAccountName": {
-				"type": "string"
-			},
-			"keyVaultName": {
-				"type": "string"
-			}
+			"referenceName": "TripFaresDataLakeStorageLinkedService2",
+			"type": "LinkedServiceReference"
 		},
 		"folder": {
 			"name": "TripFareDatasets"
