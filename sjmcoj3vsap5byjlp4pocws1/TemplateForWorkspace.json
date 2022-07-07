@@ -194,7 +194,7 @@
 						],
 						"policy": {
 							"timeout": "0.00:30:00",
-							"retry": 3,
+							"retry": 2,
 							"retryIntervalInSeconds": 30,
 							"secureOutput": false,
 							"secureInput": false
@@ -395,7 +395,7 @@
 						]
 					},
 					{
-						"name": "Copy data Trips Data_copy1",
+						"name": "Copy data Trips Data 1",
 						"type": "Copy",
 						"dependsOn": [
 							{
@@ -673,26 +673,8 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "TripFaresSynapseAnalyticsLinkedService",
-					"type": "LinkedServiceReference",
-					"parameters": {
-						"SynapseWorkspaceName": {
-							"value": "@dataset().SynapseWorkspaceName",
-							"type": "Expression"
-						},
-						"SQLDedicatedPoolName": {
-							"value": "@dataset().SQLDedicatedPoolName",
-							"type": "Expression"
-						},
-						"keyVaultName": {
-							"value": "@dataset().keyVaultName",
-							"type": "Expression"
-						},
-						"SQLLoginUsername": {
-							"value": "@dataset().SQLLoginUsername",
-							"type": "Expression"
-						}
-					}
+					"referenceName": "TripFaresSynapseAnalyticsLinkedService2",
+					"type": "LinkedServiceReference"
 				},
 				"parameters": {
 					"SynapseWorkspaceName": {
@@ -716,7 +698,7 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/linkedServices/TripFaresSynapseAnalyticsLinkedService')]"
+				"[concat(variables('workspaceId'), '/linkedServices/TripFaresSynapseAnalyticsLinkedService2')]"
 			]
 		},
 		{
