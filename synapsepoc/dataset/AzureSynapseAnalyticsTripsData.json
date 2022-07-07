@@ -2,26 +2,8 @@
 	"name": "AzureSynapseAnalyticsTripsData",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "TripFaresSynapseAnalyticsLinkedService",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"SynapseWorkspaceName": {
-					"value": "@dataset().SynapseWorkspaceName",
-					"type": "Expression"
-				},
-				"SQLDedicatedPoolName": {
-					"value": "@dataset().SQLDedicatedPoolName",
-					"type": "Expression"
-				},
-				"keyVaultName": {
-					"value": "@dataset().keyVaultName",
-					"type": "Expression"
-				},
-				"SQLLoginUsername": {
-					"value": "@dataset().SQLLoginUsername",
-					"type": "Expression"
-				}
-			}
+			"referenceName": "TripFaresSynapseAnalyticsLinkedService2",
+			"type": "LinkedServiceReference"
 		},
 		"parameters": {
 			"SynapseWorkspaceName": {
